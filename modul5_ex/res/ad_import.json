@@ -1,0 +1,56 @@
+[
+  {
+    "fornavn": "Maria",
+    "efternavn": "Hansen",
+    "afdeling": "IT",
+    "logonnavn": "maria.hansen"
+  },
+  {
+    "fornavn": "Jonas",
+    "efternavn": "Nielsen",
+    "afdeling": "HR",
+    "logonnavn": "jonas.nielsen"
+  },
+  {
+    "fornavn": "Sofie",
+    "efternavn": "Andersen",
+    "afdeling": "IT",
+    "logonnavn": "sofie.andersen"
+  },
+  {
+    "fornavn": "Mads",
+    "efternavn": "Kjær",
+    "afdeling": "Økonomi",
+    "logonnavn": "mads.kjaer"
+  },
+  {
+    "fornavn": "Åse",
+    "efternavn": "Dalgaard",
+    "afdeling": "Ledelse",
+    "logonnavn": "aase.dalgaard"
+  },
+  {
+    "fornavn": "Louise",
+    "efternavn": "Møller",
+    "afdeling": "IT",
+    "logonnavn": "louise.moeller"
+  },
+  {
+    "fornavn": "Camilla",
+    "efternavn": "Poulsen",
+    "afdeling": "Økonomi",
+    "logonnavn": "camilla.poulsen"
+  },
+  {
+    "fornavn": "Andreas",
+    "efternavn": "Larsen",
+    "afdeling": "IT",
+    "logonnavn": "andreas.larsen"
+  },
+  {
+    "fornavn": "Stine",
+    "efternavn": "Madsen",
+    "afdeling": "HR",
+    "logonnavn": "stine.madsen"
+  }
+]
