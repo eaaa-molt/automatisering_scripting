@@ -1,0 +1,22 @@
+[
+         {
+                  "navn": "Anna Jensen",
+                  "afdeling": "IT",
+                  "aktiv": true
+         },
+         {
+                  "navn": "Bjarne Nielsen",
+                  "afdeling": "HR",
+                  "aktiv": true
+         },
+         {
+                  "navn": "Cecilie Hansen",
+                  "afdeling": "IT",
+                  "aktiv": false
+         },
+         {
+                  "navn": "Diana Larsen",
+                  "afdeling": "Økonomi",
+                  "aktiv": false
+         }
+]
