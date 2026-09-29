@@ -28,7 +28,7 @@ MAPPE = Path(__file__).parent
 
 
 class Bruger:
-    # __init__ er givet og færdig — tilføj de to metoder nedenfor
+    # __init__ er givet og færdig - tilføj de to metoder nedenfor
 
     def __init__(self, fornavn, efternavn, afdeling):
         self.fornavn   = fornavn

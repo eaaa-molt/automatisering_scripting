@@ -34,7 +34,7 @@ MAPPE = Path(__file__).parent
 # laes_brugere(sti)
 #
 # Læs en CSV-fil med csv.DictReader.
-# Returnér en liste af dicts — én dict pr. række.
+# Returnér en liste af dicts - én dict pr. række.
 # Returnér en tom liste hvis filen ikke eksisterer.
 #
 # Hint: list(csv.DictReader(f)) giver listen direkte
@@ -75,7 +75,7 @@ def filtrer_aktive(brugere):
 # Hint: åbn med newline="" og encoding="utf-8"
 
 def skriv_brugere(brugere, sti):
-    # TODO: tjek om listen er tom — returnér i så fald straks
+    # TODO: tjek om listen er tom - returnér i så fald straks
     # TODO: åbn filen og opret DictWriter med feltnavne
     # TODO: skriv header og derefter alle rækker
     pass   # erstat

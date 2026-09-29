@@ -7,8 +7,8 @@ Kombiner CSV-læsning, validering og JSON-eksport.
 
 Bruger-klassen er givet og færdig.
 Din opgave er to funktioner:
-  1. laes_og_valider  — læs CSV og filtrer ugyldige rækker
-  2. gem_ad_import    — gem de gyldige brugere som JSON
+  1. laes_og_valider  - læs CSV og filtrer ugyldige rækker
+  2. gem_ad_import    - gem de gyldige brugere som JSON
 
 Outputfilen ad_import.json er den vi åbner igen i modul 7
 når vi automatiserer oprettelsen af AD-konti med Python.
@@ -44,7 +44,7 @@ class Bruger:
 
     def __str__(self):
         return (f"{self.fornavn} {self.efternavn}"
-                f" ({self.afdeling}) — {self.logonnavn}")
+                f" ({self.afdeling}) - {self.logonnavn}")
 
     def til_dict(self):
         return {
@@ -67,7 +67,7 @@ class Bruger:
 # Returnér en tom liste ved FileNotFoundError.
 
 def laes_og_valider(sti):
-    # TODO: åbn filen og læs med DictReader — fang FileNotFoundError
+    # TODO: åbn filen og læs med DictReader - fang FileNotFoundError
     # TODO: gå rækker igennem og spring over ved ugyldige værdier
     # TODO: opret Bruger-objekt og tilføj til listen
     # TODO: returnér listen

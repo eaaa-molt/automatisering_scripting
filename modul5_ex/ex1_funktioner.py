@@ -6,7 +6,7 @@
 Repetition af def, return, try/except og raise ValueError.
 
 Vi bygger tre hjælpefunktioner som alle bruges igen
-i øvelse 3 og 4 — og i modul 7 når vi automatiserer AD.
+i øvelse 3 og 4 - og i modul 7 når vi automatiserer AD.
 =============================================================
 """
 
@@ -58,7 +58,7 @@ def normaliser_tegn(tekst):
 # laes_fil(sti)
 #
 # Åbner en fil og returnerer indholdet som én streng.
-# Returnér None hvis filen ikke eksisterer — ingen crash.
+# Returnér None hvis filen ikke eksisterer - ingen crash.
 #
 # Hint: brug try/except FileNotFoundError
 # Hint: åbn med encoding="utf-8"
@@ -102,7 +102,7 @@ def main():
     print(laes_fil("mangler.txt"))
     indhold = laes_fil(MAPPE / "brugere.csv")
     if indhold is not None:
-        print(f"Fil indlæst — {len(indhold)} tegn")
+        print(f"Fil indlæst - {len(indhold)} tegn")
     else:
         print("Fil ikke fundet (opgave 2 ikke løst endnu)")
 
