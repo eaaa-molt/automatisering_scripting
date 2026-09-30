@@ -3,6 +3,9 @@
   MODUL 5  ·  Sprint 2  ·  Ekstraopgaver
   CSV-filer
 =============================================================
+Disse opgaver bygger videre på øvelse 2.
+brugere.csv ligger i modul5/-mappen (to niveauer op).
+=============================================================
 """
 
 import csv
@@ -11,6 +14,17 @@ from pathlib import Path
 MAPPE = Path(__file__).parent
 
 
+# ── Opgave 4 ──────────────────────────────────────────────
+# tael_pr_afdeling(brugere)
+#
+# Modtager en liste af dicts (som fra laes_brugere i øvelse 2).
+# Returnér en dict med antal brugere pr. afdeling.
+#
+# Eksempel (med hele brugere.csv, ikke kun aktive):
+#   {"IT": 5, "HR": 3, "Økonomi": 2, "Ledelse": 1, "Salg": 1}
+#
+# Hint: antal[afd] = antal.get(afd, 0) + 1
+
 def tael_pr_afdeling(brugere):
     antal = {}
     for b in brugere:
@@ -18,6 +32,16 @@ def tael_pr_afdeling(brugere):
         antal[afd] = antal.get(afd, 0) + 1
     return antal
 
+
+# ── Opgave 5 ──────────────────────────────────────────────
+# filtrer_og_skriv(indsti, udsti, afdeling)
+#
+# Læs CSV fra indsti, find de aktive brugere i den givne afdeling,
+# og skriv dem til udsti.
+# Returnér antal skrevne rækker (0 hvis ingen match eller fil mangler).
+#
+# Hint: filtrer på b["aktiv"] == "ja" AND b["afdeling"] == afdeling
+# Hint: fang FileNotFoundError og returnér 0
 
 def filtrer_og_skriv(indsti, udsti, afdeling):
     try:

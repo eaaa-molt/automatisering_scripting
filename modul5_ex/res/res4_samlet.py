@@ -3,6 +3,16 @@
   MODUL 5  ·  Sprint 4  ·  Øvelse 4
   AD-forberedelse (samlet øvelse)
 =============================================================
+Kombiner CSV-læsning, validering og JSON-eksport.
+
+Bruger-klassen er givet og færdig.
+Din opgave er to funktioner:
+  1. laes_og_valider  - læs CSV og filtrer ugyldige rækker
+  2. gem_ad_import    - gem de gyldige brugere som JSON
+
+Outputfilen ad_import.json er den vi åbner igen i modul 7
+når vi automatiserer oprettelsen af AD-konti med Python.
+=============================================================
 """
 
 import csv
@@ -13,6 +23,8 @@ MAPPE = Path(__file__).parent
 
 TILLADTE_AFDELINGER = ["IT", "HR", "Økonomi", "Ledelse"]
 
+
+# ── Bruger-klassen er givet og færdig ─────────────────────
 
 class Bruger:
     def __init__(self, fornavn, efternavn, afdeling):
@@ -32,7 +44,7 @@ class Bruger:
 
     def __str__(self):
         return (f"{self.fornavn} {self.efternavn}"
-                f" ({self.afdeling}) — {self.logonnavn}")
+                f" ({self.afdeling}) - {self.logonnavn}")
 
     def til_dict(self):
         return {
@@ -42,6 +54,17 @@ class Bruger:
             "logonnavn": self.logonnavn,
         }
 
+
+# ── Opgave 1 ──────────────────────────────────────────────
+# laes_og_valider(sti)
+#
+# Læs CSV-filen og opret Bruger-objekter for gyldige rækker.
+# Spring en række over og print en advarsel hvis:
+#   - aktiv != "ja"
+#   - afdeling ikke er i TILLADTE_AFDELINGER
+#
+# Returnér en liste af de gyldige Bruger-objekter.
+# Returnér en tom liste ved FileNotFoundError.
 
 def laes_og_valider(sti):
     brugere = []
@@ -60,6 +83,13 @@ def laes_og_valider(sti):
         return []
     return brugere
 
+
+# ── Opgave 2 ──────────────────────────────────────────────
+# gem_ad_import(brugere, sti)
+#
+# Gem listen af Bruger-objekter som en JSON-fil.
+# Brug til_dict() på hvert objekt.
+# Print: "Gemt <antal> brugere til <filnavn>"
 
 def gem_ad_import(brugere, sti):
     data = [b.til_dict() for b in brugere]

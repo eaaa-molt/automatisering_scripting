@@ -5,7 +5,7 @@
 =============================================================
 Disse opgaver bygger videre på øvelse 3.
 Bruger-klassen herunder er en færdig version med de metoder
-du implementerede i øvelse 3 — plus et stub til opgave 5.
+du implementerede i øvelse 3 - plus et stub til opgave 5.
 =============================================================
 """
 
@@ -17,7 +17,7 @@ MAPPE = Path(__file__).parent
 
 class Bruger:
     # __init__, __str__ og til_dict er givet og færdige.
-    # Din opgave er at tilføje logonnavn() — se opgave 5 nedenfor.
+    # Din opgave er at tilføje logonnavn() - se opgave 5 nedenfor.
 
     def __init__(self, fornavn, efternavn, afdeling):
         self.fornavn   = fornavn
@@ -56,7 +56,7 @@ class Bruger:
 # flet_filer(stier, udsti)
 #
 # Indlæs JSON fra alle filer i listen stier.
-# Flet dem til én liste — spring dubletter over.
+# Flet dem til én liste - spring dubletter over.
 # En dublet er to poster med samme fornavn OG efternavn.
 # Gem den flettede liste til udsti.
 # Returnér antal unikke poster.

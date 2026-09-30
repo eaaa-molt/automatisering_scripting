@@ -3,6 +3,9 @@
   MODUL 5  ·  Sprint 1  ·  Ekstraopgaver
   Funktioner og fejlhåndtering
 =============================================================
+Disse opgaver bygger videre på øvelse 1.
+Løs dem i rækkefølge - opgave 5 bruger logikken fra opgave 4.
+=============================================================
 """
 
 from pathlib import Path
@@ -12,6 +15,20 @@ MAPPE = Path(__file__).parent
 TILLADTE_AFDELINGER = ["IT", "HR", "Økonomi", "Ledelse"]
 
 
+# ── Opgave 4 ──────────────────────────────────────────────
+# generer_logonnavn(fornavn, efternavn)
+#
+# Returnér et logonnavn på formatet "fornavn.efternavn"
+# hvor begge dele er normaliserede (lowercase, æ→ae osv.).
+#
+# Eksempler:
+#   generer_logonnavn("Maria", "Hansen")   →  "maria.hansen"
+#   generer_logonnavn("Åse", "Dalgaard")   →  "aase.dalgaard"
+#   generer_logonnavn("Mads", "Kjær")      →  "mads.kjaer"
+#
+# Hint: definér en lokal normaliser(s)-funktion inde i generer_logonnavn
+# Hint: return f"{normaliser(fornavn)}.{normaliser(efternavn)}"
+
 def generer_logonnavn(fornavn, efternavn):
     def normaliser(s):
         s = s.lower()
@@ -20,6 +37,19 @@ def generer_logonnavn(fornavn, efternavn):
         return s
     return f"{normaliser(fornavn)}.{normaliser(efternavn)}"
 
+
+# ── Opgave 5 ──────────────────────────────────────────────
+# valider_bruger(fornavn, efternavn, afdeling)
+#
+# Kontrollér alle tre felter og kast ValueError ved første fejl.
+# Tjek i rækkefølgen: fornavn → efternavn → afdeling.
+#
+# Fejlbeskeder (nøjagtigt disse):
+#   "Fornavn må ikke være tomt"
+#   "Efternavn må ikke være tomt"
+#   "<afdeling> er ikke en gyldig afdeling"
+#
+# Returnér True hvis alle tre felter er gyldige.
 
 def valider_bruger(fornavn, efternavn, afdeling):
     if not fornavn.strip():

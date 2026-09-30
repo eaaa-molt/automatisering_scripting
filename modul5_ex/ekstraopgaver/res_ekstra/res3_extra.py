@@ -3,6 +3,10 @@
   MODUL 5  ·  Sprint 3  ·  Ekstraopgaver
   JSON og klasser
 =============================================================
+Disse opgaver bygger videre på øvelse 3.
+Bruger-klassen herunder er en færdig version med de metoder
+du implementerede i øvelse 3 - plus et stub til opgave 5.
+=============================================================
 """
 
 import json
@@ -27,6 +31,18 @@ class Bruger:
             "afdeling":  self.afdeling,
         }
 
+    # ── Opgave 5 ──────────────────────────────────────────
+    # Tilføj metoden logonnavn(self) til klassen.
+    #
+    # Den skal returnere "fornavn.efternavn" i lowercase
+    # med æ→ae, ø→oe, å→aa (og de store varianter).
+    #
+    # Eksempler:
+    #   Bruger("Maria", "Hansen", "IT")    →  "maria.hansen"
+    #   Bruger("Åse", "Dalgaard", "Led")   →  "aase.dalgaard"
+    #
+    # Hint: definér en lokal def normaliser(s) inde i metoden
+
     def logonnavn(self):
         def normaliser(s):
             s = s.lower()
@@ -35,6 +51,18 @@ class Bruger:
             return s
         return f"{normaliser(self.fornavn)}.{normaliser(self.efternavn)}"
 
+
+# ── Opgave 6 ──────────────────────────────────────────────
+# flet_filer(stier, udsti)
+#
+# Indlæs JSON fra alle filer i listen stier.
+# Flet dem til én liste - spring dubletter over.
+# En dublet er to poster med samme fornavn OG efternavn.
+# Gem den flettede liste til udsti.
+# Returnér antal unikke poster.
+#
+# Hint: fang FileNotFoundError for hver enkelt sti og spring den over
+# Hint: brug en liste af sete (fornavn, efternavn)-tupler
 
 def flet_filer(stier, udsti):
     sete = []

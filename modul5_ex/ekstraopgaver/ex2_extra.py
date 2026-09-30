@@ -42,7 +42,7 @@ def tael_pr_afdeling(brugere):
 # Hint: fang FileNotFoundError og returnér 0
 
 def filtrer_og_skriv(indsti, udsti, afdeling):
-    # TODO: læs CSV fra indsti — fang FileNotFoundError og returnér 0
+    # TODO: læs CSV fra indsti - fang FileNotFoundError og returnér 0
     # TODO: filtrer aktive brugere i den givne afdeling
     # TODO: skriv resultatet til udsti (gør intet hvis listen er tom)
     # TODO: returnér antal skrevne rækker

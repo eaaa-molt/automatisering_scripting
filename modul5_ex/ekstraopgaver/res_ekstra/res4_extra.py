@@ -3,6 +3,10 @@
   MODUL 5  ·  Sprint 4  ·  Ekstraopgaver
   AD-forberedelse
 =============================================================
+Disse opgaver bygger videre på øvelse 4.
+Bruger-klassen herunder er identisk med ex4_samlet.py - givet og færdig.
+brugere.csv ligger i modul5/-mappen (to niveauer op).
+=============================================================
 """
 
 import csv
@@ -13,6 +17,8 @@ MAPPE = Path(__file__).parent
 
 TILLADTE_AFDELINGER = ["IT", "HR", "Økonomi", "Ledelse"]
 
+
+# ── Bruger-klassen er givet og færdig ─────────────────────
 
 class Bruger:
     def __init__(self, fornavn, efternavn, afdeling):
@@ -32,7 +38,7 @@ class Bruger:
 
     def __str__(self):
         return (f"{self.fornavn} {self.efternavn}"
-                f" ({self.afdeling}) — {self.logonnavn}")
+                f" ({self.afdeling}) - {self.logonnavn}")
 
     def til_dict(self):
         return {
@@ -42,6 +48,24 @@ class Bruger:
             "logonnavn": self.logonnavn,
         }
 
+
+# ── Opgave 3 ──────────────────────────────────────────────
+# vis_rapport(brugere)
+#
+# Print en tabel med antal gyldige brugere pr. afdeling
+# og en samlet total nederst.
+#
+# Eksempel (med 9 gyldige brugere fra brugere.csv):
+#   Afdeling          Antal
+#   ──────────────────────────
+#   IT                4
+#   HR                2
+#   Økonomi           2
+#   Ledelse           1
+#   ──────────────────────────
+#   I alt             9
+#
+# Hint: brug f"{felt:<18}" til at justere venstre kolonne
 
 def vis_rapport(brugere):
     antal = {}
@@ -55,6 +79,16 @@ def vis_rapport(brugere):
     print(streg)
     print(f"{'I alt':<18}{len(brugere)}")
 
+
+# ── Opgave 4 ──────────────────────────────────────────────
+# find_konflikter(brugere)
+#
+# To Bruger-objekter har en logonnavn-konflikt hvis de får
+# præcist samme logonnavn.
+# Returnér en liste med de Bruger-objekter der har dubletter.
+#
+# Hint: tæl logonnavne i en dict
+# Hint: saml dem hvor antal > 1
 
 def find_konflikter(brugere):
     antal = {}

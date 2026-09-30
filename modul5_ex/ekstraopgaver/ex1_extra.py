@@ -4,7 +4,7 @@
   Funktioner og fejlhåndtering
 =============================================================
 Disse opgaver bygger videre på øvelse 1.
-Løs dem i rækkefølge — opgave 5 bruger logikken fra opgave 4.
+Løs dem i rækkefølge - opgave 5 bruger logikken fra opgave 4.
 =============================================================
 """
 
@@ -49,8 +49,8 @@ def generer_logonnavn(fornavn, efternavn):
 # Returnér True hvis alle tre felter er gyldige.
 
 def valider_bruger(fornavn, efternavn, afdeling):
-    # TODO: tjek fornavn — kast ValueError hvis tomt
-    # TODO: tjek efternavn — kast ValueError hvis tomt
+    # TODO: tjek fornavn - kast ValueError hvis tomt
+    # TODO: tjek efternavn - kast ValueError hvis tomt
     # TODO: tjek afdeling mod TILLADTE_AFDELINGER
     # TODO: returnér True hvis alt er gyldigt
     return True   # erstat denne linje (kaster ingen fejl endnu)

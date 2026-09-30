@@ -4,7 +4,7 @@
   AD-forberedelse
 =============================================================
 Disse opgaver bygger videre på øvelse 4.
-Bruger-klassen herunder er identisk med ex4_samlet.py — givet og færdig.
+Bruger-klassen herunder er identisk med ex4_samlet.py - givet og færdig.
 brugere.csv ligger i modul5/-mappen (et niveau op).
 =============================================================
 """
@@ -38,7 +38,7 @@ class Bruger:
 
     def __str__(self):
         return (f"{self.fornavn} {self.efternavn}"
-                f" ({self.afdeling}) — {self.logonnavn}")
+                f" ({self.afdeling}) - {self.logonnavn}")
 
     def til_dict(self):
         return {
