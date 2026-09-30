@@ -1,0 +1,17 @@
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Midlertidige mapper
+tmp/
+
+# Editorer
+.vscode/
+*.swp
