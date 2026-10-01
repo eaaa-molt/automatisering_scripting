@@ -45,7 +45,13 @@ def laes_brugere(sti):
 # Hint: eller brug en list comprehension
 
 def filtrer_aktive(brugere):
-    return [b for b in brugere if b["aktiv"] == "ja"]
+    
+    result = []
+    for b in brugere:
+        if b['aktiv'] == "ja":
+            result.append(b)
+    return result
+
 
 
 # ── Opgave 3 ──────────────────────────────────────────────

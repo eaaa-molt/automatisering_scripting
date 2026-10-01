@@ -56,9 +56,11 @@ class Bruger:
 # Brug indent=2 og ensure_ascii=False.
 
 def gem_som_json(brugere, sti):
-    data = [b.til_dict() for b in brugere]
+    bruger_dicts = []
+    for bruger in brugere:
+        bruger_dicts.append(bruger.til_dict())
     with open(sti, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+        json.dump(bruger_dicts, f, indent=2, ensure_ascii=False)
 
 
 # ── Opgave 4 ──────────────────────────────────────────────
