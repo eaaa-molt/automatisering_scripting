@@ -36,7 +36,7 @@ AD_SERVER  = "10.160.x.x"            # ← DC'ens IP-adresse
 #              Brug IP - ikke hostname - da DNS-opslag ikke
 #              er tilgængeligt på lab-netværket.
 #              IP-adressen finder du i Øvelse 0 (Confluence) eller
-#              ved at spørge din underviser.
+#              ved at spørge Michael.
 AD_BRUGER  = "CSIK_DC_1\\dit.navn"   # ← DOMÆNE\\logonnavn
 AD_KODE    = "DinAdgangskode"         # ← din AD-adgangskode
 AD_BASE_DN = "DC=CSIK_DC_1,DC=local" # ← se defaultNamingContext i Øvelse 0
