@@ -102,6 +102,8 @@ soeg(filtr6, "Opgave 6 · HR-brugere med en titel")
 #  Brugere hvor department-attributten IKKE er sat.
 #  "attribut er ikke sat" skrives som:  (!(department=*))
 #  (! = NOT, dvs. NOT department exists)
+#  Kombinér det med (objectClass=user) i et AND-filter.
+#  Ellers kommer OU=Brugere selv med: den har heller ingen afdeling.
 
 filtr7 = None  # TODO
 
@@ -155,4 +157,6 @@ print("BONUS - Uden afdeling:")
 print("  A. Er der brugere uden afdeling?")
 print("     Find dem i ADUC - er Department-feltet tomt der?")
 print("  B. Hvad ville scriptet fra lektion 5, øvelse 4 have gjort med dem?")
+print("  C. Prøv kun (!(department=*)). Hvorfor kommer der en tom linje med?")
+print("     Hint: SUBTREE søger også i selve search_base (OU=Brugere).")
 print("=" * 60)
