@@ -29,10 +29,10 @@ from ldap3 import Server, Connection, ALL, NTLM, SUBTREE
 
 # ── Opgave 1 · Udfyld de fire konstanter ─────────────────
 
-AD_SERVER  = "10.160.x.x"            # ← DC'ens IP-adresse (Øvelse 0, Del 0)
+AD_SERVER  = "10.160.x.x"            # ← DC'ens IP-adresse (Øvelse 0, Del 1)
 AD_BRUGER  = "CSIK_DC_1\\dit.logonnavn"   # ← DOMÆNE\\logonnavn
 AD_KODE    = "DinAdgangskode"        # ← din AD-adgangskode
-AD_BASE_DN = "DC=CSIK_DC_1,DC=local" # ← defaultNamingContext (Øvelse 0, Del 5)
+AD_BASE_DN = "DC=CSIK_DC_1,DC=local" # ← defaultNamingContext (Øvelse 0, Del 3)
 
 
 # ── Opgave 1 · Opret forbindelsen ────────────────────────
