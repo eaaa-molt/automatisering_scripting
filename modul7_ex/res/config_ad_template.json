@@ -1,0 +1,9 @@
+{
+  "_vejledning":  "Kopiér denne fil til config_ad.json og udfyld med jeres egne værdier",
+  "_tip_server":  "Brug DC'ens IP-adresse hvis hostname-opslag ikke virker på lab-netværket",
+  "_tip_base_dn": "base_dn = defaultNamingContext fra rootDSE (se Øvelse 0 på Confluence)",
+  "server":       "10.160.x.x",
+  "bruger":       "CSIK_DC_1\\dit.logonnavn",
+  "adgangskode":  "DinAdgangskode",
+  "base_dn":      "DC=CSIK_DC_1,DC=local"
+}
