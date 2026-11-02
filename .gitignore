@@ -15,3 +15,7 @@ tmp/
 # Editorer
 .vscode/
 *.swp
+
+# AD-forbindelsesoplysninger (rigtige adgangskoder, må aldrig i Git)
+config_ad.json
+config_ad_crypt.json
