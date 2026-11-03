@@ -18,3 +18,7 @@ conn.search("DC=CSIK_DC_1,DC=local",
 print("Trin 3:", conn.entries[0])
 
 conn.unbind()
+
+# Observation:
+# 1. Hvad printer Trin 1? Er der sendt noget til DC'en endnu?
+# 2. Skriv en forkert kode i Trin 2. Hvilken fejl får du?
