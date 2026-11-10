@@ -1,0 +1,6 @@
+{
+  "_vejledning":  "Kopiér denne fil til config_ad.json og udfyld med dine egne værdier",
+  "server":       "10.160.x.x",
+  "bruger":       "CSIK_DC_1\\dit.logonnavn",
+  "adgangskode":  "DinAdgangskode"
+}
