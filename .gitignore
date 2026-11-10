@@ -11,6 +11,7 @@ __pycache__/
 
 # Midlertidige mapper
 tmp/
+temp/
 
 # Editorer
 .vscode/
