@@ -1,0 +1,6 @@
+{
+  "base": "DC=CSIK_DC_1,DC=local",
+  "ou": "OU=Modul8,OU=Testdata,DC=CSIK_DC_1,DC=local",
+  "afdelinger": ["IT", "HR", "Salg", "Support"],
+  "mail_domaene": "firma.dk"
+}
